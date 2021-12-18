@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+    font-size: 1.125rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+main {
+    background-color: hsl(216, 50%, 16%);
+    width: 23.4375rem;
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 2rem rgb(9, 19, 36);
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+#nft-image {
+    border-radius: .625rem;
+    margin-bottom: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+#mainimage {
+    position: relative;
+    width: 100%;
+    display: block;
+    border-radius: .625rem;
+}
+
+#imageoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl(178, 100%, 50%, 0.5);
+    border-radius: .625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s
+}
+
+#imageoverlay:hover {
+    opacity: 1;
+}
+
+#description h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5625rem;
+    margin-bottom: 1rem;
+}
+
+#description a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+#description p {
+    line-height: 1.7rem;
+}
+
+#description {
+    margin-bottom: 1.5rem;
+}
+
+#details img,
+#details p,
+#creator img,
+#creator p {
+    display: inline;
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.eth img {
+    margin-right: .3125rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.time {
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.time img {
+    margin-right: .3125rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.creatorname {
+    color: hsl(0, 0%, 100%);
+    margin-left: .3125rem;
+}
+
+.creatorname:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+#details {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#creator img {
+    width: 40%;
+    border: .0625rem solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+}
+
+#creator {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: .0625rem solid hsl(215, 32%, 27%);
+}
+
+#creator p {
+    margin-left: -7.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
