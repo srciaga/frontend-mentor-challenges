@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("./images/pattern-background-mobile.svg") no-repeat;
+    background-size: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(224, 23%, 55%);
+    font-size: 0.9rem;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+main {
+    background-color: #fff;
+    width: 17.5rem;
+    border-radius: .9375rem;
+    box-shadow: 0 .8125rem 2rem hsl(225, 62%, 80%);
+}
+
+#mainimage {
+    width: 100%;
+    border-top-left-radius: .9375rem;
+    border-top-right-radius: .9375rem;
+}
+
+.content {
+    padding: 2rem 1.3rem 2rem 1.3rem;
+}
+
+#ordersummary {
+    text-align: center;
+}
+
+#ordersummary h1 {
+    color: hsl(223, 47%, 23%);
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+#ordersummary p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+#planinfo {
+    background-color: #F8F9FE;
+    border-radius: .75rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+}
+
+#planinfo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#planinfo h2 {
+    color: hsl(223, 47%, 23%);
+    font-size: 0.75rem;
+    margin-bottom: 0.1rem;
+}
+
+#planinfo p {
+    font-size: 0.75rem;
+}
+
+.centertext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#planinfo a {
+    font-size: 0.75rem;
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-weight: 700;
+}
+
+#planinfo a:hover {
+    color: #746CE9;
+    text-decoration: none;
+}
+
+#buttons a {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+}
+
+#paymentbutton {
+    background-color: hsl(245, 75%, 52%);
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: .60rem;
+    color: #fff;
+    font-weight: 900;
+    box-shadow: 0 .8125rem 1rem hsl(224, 42%, 77%);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.009rem;
+}
+
+#paymentbutton:hover {
+    background-color: #746CE9;
+}
+
+#cancelbutton {
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+#cancelbutton:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+/* Small Screens */
+@media screen and (min-width:420px) {
+    body {
+        font-size: 1rem;
+    }
+
+    main {
+        width: 23.4375rem;
+    }
+
+    .content {
+        padding: 2rem 2.8rem 2rem 2.8rem;
+    }
+
+    #ordersummary h1 {
+        font-size: 1.5rem;
+    }
+
+    #ordersummary p {
+        line-height: 1.7rem;
+    }
+
+    #planinfo h2,
+    #planinfo p,
+    #planinfo a {
+        font-size: 0.9rem;
+    }
+
+    #buttons a {
+        font-size: 1rem;
+    }
+}
+
+/* Larger screens */
+@media screen and (min-width:1600px) {
+    body {
+        background: url("./images/pattern-background-desktop.svg") no-repeat;
+        background-size: 100%;
+        background-color: hsl(225, 100%, 94%);
+        font-size: 1rem;
+    }
+
+    main {
+        width: 25rem;
+    }
+
+    .content {
+        padding: 2rem 2.8rem 2rem 2.8rem;
+    }
+
+    #ordersummary h1 {
+        font-size: 1.5rem;
+    }
+
+    #ordersummary p {
+        line-height: 1.7rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #planinfo h2,
+    #planinfo p,
+    #planinfo a {
+        font-size: 0.9rem;
+    }
+
+    #planinfo {
+        grid-template-columns: 25% 40% 35%;
+    }
+
+    .centertext {
+        justify-content: left;
+        text-align: left;
+    }
+
+    #buttons a {
+        font-size: 1rem;
+    }
+
+    #paymentbutton {
+        margin-bottom: 2rem;
+    }
+}
