@@ -5,3 +5,6 @@ https://srciaga.github.io/frontend-mentor-challenges/nft-preview-card-component/
   
 Order Summary Component  
 https://srciaga.github.io/frontend-mentor-challenges/order-summary-component/index.html  
+  
+Stats Preview Component  
+https://srciaga.github.io/frontend-mentor-challenges/stats-preview-card-component/index.html  
