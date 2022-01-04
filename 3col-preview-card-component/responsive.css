@@ -1,0 +1,72 @@
+/* Small Screens */
+
+@media (min-width:0px) and (max-width:340px) {
+
+    /* Center and add margin */
+    main {
+        margin: auto;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    /* Add margin to the bottom of the page */
+    #luxury {
+        margin-bottom: 3rem;
+    }
+
+    /* Fixes broken Learn More button. */
+    a {
+        padding: 0.5rem 2rem 0.5rem 2rem;
+    }
+
+}
+
+@media screen and (min-width:341px) {
+
+    /* Center and add margin */
+    main {
+        margin: auto;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    /* Add margin to the bottom of the page */
+    #luxury {
+        margin-bottom: 3rem;
+    }
+
+}
+
+/* Even larger screens */
+@media screen and (min-width:1470px) {
+
+    main {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        width: 57rem;
+    }
+
+    section {
+        height: 32rem;
+    }
+
+    #sedans {
+        border-top-left-radius: 0.8em;
+        border-top-right-radius: 0rem;
+        border-bottom-left-radius: 0.8rem;
+    }
+
+    #luxury {
+        border-bottom-left-radius: 0rem;
+        border-top-right-radius: 0.8em;
+        border-bottom-right-radius: 0.8rem;
+    }
+
+    p {
+        margin-bottom: 6rem;
+    }
+
+}

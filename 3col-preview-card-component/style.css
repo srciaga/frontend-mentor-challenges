@@ -1,0 +1,96 @@
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .9375rem;
+    /* Centering */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 23.4375rem;
+}
+
+#sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+}
+
+#suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
+}
+
+section {
+    padding: 4.5rem 3rem 4.5rem 3rem;
+    height: 30rem;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    margin: 1.8rem 0rem 1.5rem 0rem;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.6rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 3rem;
+}
+
+a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    border: solid hsl(0, 0%, 95%) .125rem;
+    border-radius: 2rem;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+}
+
+#sedans a {
+    color: hsl(31, 77%, 52%);
+}
+
+#sedans a:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    transition: color 0.5s, background-color 0.5s;
+}
+
+#suvs a {
+    color: hsl(184, 100%, 22%);
+}
+
+#suvs a:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    transition: color 0.5s, background-color 0.5s;
+}
+
+#luxury a {
+    color: hsl(179, 100%, 13%);
+}
+
+#luxury a:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    transition: color 0.5s, background-color 0.5s;
+}
