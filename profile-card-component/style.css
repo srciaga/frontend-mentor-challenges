@@ -1,0 +1,109 @@
+/* COLORS
+hsl(185, 75%, 39%)
+hsl(229, 23%, 23%)
+hsl(227, 10%, 46%)
+hsl(0, 0%, 59%)
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.125rem;
+    background-color: hsl(185, 75%, 39%);
+    color: hsl(229, 23%, 23%);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: -200px -400px, 800px 500px;
+    background-repeat: no-repeat, no-repeat;
+    /* Centering */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* 
+.top-bg {
+    position: absolute;
+    background: url("images/bg-pattern-top.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 978px;
+    width: 978px;
+    top: -528px;
+    left: -284px;
+}
+
+.bottom-bg {
+    position: absolute;
+    background: url("images/bg-pattern-bottom.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 978px;
+    width: 978px;
+    bottom: -628px;
+    right: -250px;
+}
+*/
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 23.4375rem;
+    border-radius: .9375rem;
+    box-shadow: 0 0 2rem hsl(0, 0%, 0%, 10%);
+}
+
+#header-pic img {
+    width: 100%;
+    border-top-left-radius: .9375rem;
+    border-top-right-radius: .9375rem;
+}
+
+#profile-pic {
+    border-radius: 100%;
+    background-color: white;
+    padding: .4375rem;
+    position: relative;
+    top: -3.75rem;
+}
+
+#age {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    margin-left: 0.5rem;
+}
+
+#info h1 {
+    margin-top: -3rem;
+}
+
+#info h2 {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 1.15rem;
+    margin-top: 0.7rem;
+}
+
+#info {
+    border-bottom: solid hsl(0, 0%, 59%, 35%) 1px;
+    padding-bottom: 1.7rem;
+}
+
+#stats {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    padding: 2rem;
+}
+
+#stats h4 {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-top: 0.35rem;
+    letter-spacing: 0.15rem;
+}
