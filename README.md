@@ -14,3 +14,6 @@ https://srciaga.github.io/frontend-mentor-challenges/3col-preview-card-component
 
 Profile Card Component  
 https://srciaga.github.io/frontend-mentor-challenges/profile-card-component/index.html  
+
+Social Proof Section  
+https://srciaga.github.io/frontend-mentor-challenges/social-proof-section/index.html  
