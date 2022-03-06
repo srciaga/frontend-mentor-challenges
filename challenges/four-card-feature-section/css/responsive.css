@@ -1,0 +1,28 @@
+/* Fix small screens */
+@media screen and (max-width:26.2rem) {
+
+    /* Typography */
+    body {
+        font-size: .85rem;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    /* Box Model */
+    .container {
+        min-width: 20.625rem;
+    }
+}
+
+/* Large screen layout */
+@media screen and (min-width:90rem) {
+    body {
+        background-color: lightblue;
+    }
+}
