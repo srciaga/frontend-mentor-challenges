@@ -1,5 +1,5 @@
-# Frontend Mentor Challenges
+# [Frontend Mentor Challenges](https://srciaga.github.io/frontend-mentor-challenges/)
 
-**Work in Progress** (check by later!)
+[![Index thumbnail](./images/rm-screenshot.png)](https://srciaga.github.io/frontend-mentor-challenges/)
 
-Up next: Four Card Feature Section
+Completed challenges from [frontendmentor.io](https://www.frontendmentor.io/).

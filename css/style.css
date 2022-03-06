@@ -1,24 +1,203 @@
+/* 
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Outfit', sans-serif;
+
+Font Weights
+Open Sans: Regular 400, Medium 500, Bold 700
+Outfit: Bold 700
+
+*/
+
 * {
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
-/* Temporary */
 body {
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
   font-size: 1rem;
   font-family: 'Helvetica', sans-serif;
-  color: #555;
+  color: #546474;
+  background-color: #f6f8ff;
+  margin: 5rem;
   /* Centering */
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Keep things horizontal */
-  flex-direction: column;
+  display: grid;
+  place-content: center;
+}
+
+main {
+  text-align: center;
 }
 
 h1,
 h2 {
-  color: #333;
+  font-family: 'Outfit', sans-serif;
+  color: #2d363f;
+}
+
+/* Links */
+
+header a,
+footer a {
+  color: #546474;
+  padding: 0rem 0.1rem 0rem 0.1rem;
+  border-bottom: .125em solid #d4ddff;
+  box-shadow: inset 0 -0.125em 0 #d4ddff;
+  transition: box-shadow 270ms cubic-bezier(0.77, 0, 0.175, 1), color 270ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+header a:hover,
+footer a:hover {
+  border-radius: 0.25rem;
+  box-shadow: inset 0 -1.125em 0 #d4ddff;
+  color: #6c7ab3;
+}
+
+header a:focus,
+footer a:focus {
+  border-radius: 0.25rem;
+  background: #fff;
+  outline: none;
+  background: #d4ddff;
+  color: #6c7ab3;
+}
+
+/* --- */
+
+header {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  border-bottom: 1px solid #6c7ab330;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+header p {
+  line-height: 1.5rem;
+  max-width: 40rem;
+  margin-bottom: 1rem;
+}
+
+header em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* Cards */
+
+img {
+  width: 100%;
+}
+
+.card {
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #6c7ab330;
+}
+
+.card h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+/* --- */
+
+/* Buttons */
+
+.buttons {
+  margin-bottom: 1.5rem;
+}
+
+a[role=button] {
+  background-color: #455FF5;
+  color: #f6f8ff;
+  font-weight: bold;
+  padding: 0.85rem 1.75rem 0.85rem 1.75rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+a[role=button]:not(:last-child) {
+  margin-right: 0.5em;
+}
+
+a[role=button]:hover {
+  background-color: #2d363f;
+  box-shadow: 0rem 0.5rem 10px #2d363f35;
+  transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+a[role=button]:focus {
+  box-shadow: 0rem 0.5rem 10px #2d363f35;
+}
+
+/* --- */
+
+.tag {
+  font-size: 0.8rem;
+  color: #6c7ab3;
+  background-color: #d4ddff50;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 5rem;
+  border-top: 1px solid #6c7ab330;
+  font-size: 0.8rem;
+}
+
+footer p {
+  margin-top: 1rem;
+}
+
+/* Responsive CSS for larger screens */
+@media screen and (min-width:80rem) {
+
+  main {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    column-gap: 5rem;
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid #6c7ab330;
+    border-bottom: 1px solid #6c7ab330;
+    padding-top: 2.5rem;
+  }
+
+  header {
+    border-bottom: none;
+  }
+
+  header p {
+    margin-bottom: 0rem;
+  }
+
+  .card {
+    border-bottom: none !important;
+    margin-bottom: 1rem;
+  }
+
+  .card h2 {
+    font-size: 1.74rem;
+  }
+
+  footer {
+    border-top: none;
+    margin-top: 0rem;
+  }
+
 }
